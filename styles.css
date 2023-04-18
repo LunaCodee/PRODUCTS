@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    min-width: 400px;
 }
   
 header {
@@ -9,7 +8,7 @@ header {
     justify-content: space-between;
     gap: 10px;
     background-color:white;
-    height: 80px;
+    height: 8vh;
     width: calc(100vw - 30px);
     box-sizing: border-box;
     padding-left: 20px;
@@ -24,7 +23,7 @@ header {
 } 
 
 .logo img {
-    width: 200px;
+    width: 20vw;
 }
   
 .logo span {
@@ -76,7 +75,7 @@ header div a:hover {
 }
 .add-product button {
     padding: 5px;
-    min-width: 200px;
+    min-width: 20vw;
     background-color: rgb(63, 185, 63);
     color: white;
 }
@@ -90,7 +89,7 @@ box-shadow: inset -6px 5px 77px -19px rgba(87,235,99,1);
 .wrapper {
     display:flex;
     flex-direction: row;
-    height: 200px;
+    min-height: 20vh;
     background-color: #fcf8f8;
     cursor: pointer;
     transition: 0.3s;
@@ -107,14 +106,14 @@ box-shadow: inset -1px -1px 23px 24px rgba(237, 237, 159, 0.23); */
 }
   
 .wrapper img {
-    height: 190px;
-    width: 300px;
+    height: 20vh;
+    width: 30vw;
     object-fit: cover;
     margin: 5px;
 }
   
 .price-wrapper {
-    width: 200px;
+    width: 20vw;
     text-align: right;
     padding: 10px;
     font-weight: bold;
@@ -141,7 +140,7 @@ box-shadow: inset -1px -1px 23px 24px rgba(237, 237, 159, 0.23); */
 }
   
 .product-photo img {
-    height: 500px;
+    height: 45vh;
     object-fit: contain;
 }
   
@@ -215,7 +214,7 @@ box-shadow: inset -1px -1px 23px 24px rgba(237, 237, 159, 0.23); */
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 60%;
+    width: 60vw;
     margin-top: 50px;
 }
   
@@ -243,7 +242,7 @@ box-shadow: inset -6px 5px 77px -19px rgba(87,235,99,1);
 
 footer {
     background-color:white;
-    height: 60px;
+    height: 6vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,8 +258,21 @@ footer div {
     .add-product {
         justify-content: center;
     }
-    .wrapper img {
-      object-fit: fill;
+
+    .wrapper {
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 80vw;
     }
+
+    .title-wrapper, 
+    footer, 
+    .price-wrapper,
+    a {
+        font-size: 0.9em;
+    } 
+
   }
   
