@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./assets/logo.svg"/>
+          <span>Lankomiausias <br>
+          skelbimų portalas</span>  
+        </div>
+      </a>
+      <div>
+        <a href="#">Prisijungti</a>
+        <a href="#">Registruotis</a>
+        <a href="./index.html">Į pradžią</a>
+      </div>
+    </header>
+    <main>
+        <div class="products-wrapper" id="products-wrapper">
+            <div class="add-product">
+                <a href="./addProduct.html">
+                    <button><b>+</b> Įdėkite skelbimą</button>
+                  </a>
+            </div>
+            <section class="product-section">
+                <div class="product-wrapper" id="product-wrapper">
+                    <div id="photo" class="product-photo">
+                    </div>
+                    <div id="delete-message" class="delete-message"></div>
+                    <div class="product-content">
+                        <div class="product-title" id="product-title"></div>
+                        <div class="product-price" id="product-price"></div>
+                        <div class="product-location" id="product-location"></div>
+                        <div class="product-description" id="product-description"></div> 
+                        <button id="erase-button">Ištrinti prekę</button>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>2003 - 2023 © UAB „Diginet LTU“</div>
+    </footer>
+    <script src="./js2.js"></script>
+  </body>
+</html>
