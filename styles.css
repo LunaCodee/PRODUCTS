@@ -262,8 +262,8 @@ footer div {
 #hamburger {
     display: none;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 10px;
     cursor: pointer;
 }
   
@@ -273,15 +273,20 @@ footer div {
     height: 3px;
     margin-bottom: 5px;
     background-color: grey;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
   
 
   
 
   @media only screen and (max-width: 768px) {
+
+    .logo span {
+        font-size: 8px;
+        width: max-content;
+    }
     .add-product {
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .wrapper {
