@@ -312,7 +312,11 @@ footer div {
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    .product-photo img {
+        height: 45vh;
+        max-width: 80vw;
+        object-fit: cover;
+    }
     .product-title {
     text-align: center;
     font-size: 1.2rem;
