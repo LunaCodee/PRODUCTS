@@ -55,3 +55,13 @@ fetch("https://643d689d6afd66da6af6326f.mockapi.io/product")
       productOptionCreation(product);
     });
   });
+
+
+  // const hamburger = document.getElementById('hamburger');
+  // const menu = document.getElementsByClassName('nav');
+  
+  // hamburger.addEventListener('click', function() {
+  //   hamburger.span.style.backgroundColor = red;
+  //   menu.style.opacity = 1;
+  // });
+  

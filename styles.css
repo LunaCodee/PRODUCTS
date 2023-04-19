@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     gap: 10px;
     background-color:white;
-    height: 8vh;
+    max-height: 8vh;
     width: calc(100vw - 30px);
     box-sizing: border-box;
     padding-left: 20px;
@@ -23,7 +23,8 @@ header {
 } 
 
 .logo img {
-    width: 20vw;
+    max-width: 20vw;
+    max-height: 8vh;
 }
   
 .logo span {
@@ -63,15 +64,16 @@ header div a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-  }
+}
 
 .add-product {
     background-color: rgb(246, 246, 22);
     padding: 10px;
     border: solid 1px rgb(235, 231, 231);
-    width: calc(100vh - 60px);
+    width: calc(100vw - 40px);
     display: flex;
     justify-content: right;
+    margin-bottom: 10px;
 }
 .add-product button {
     padding: 5px;
@@ -95,7 +97,8 @@ box-shadow: inset -6px 5px 77px -19px rgba(87,235,99,1);
     transition: 0.3s;
     color: rgb(34, 33, 33);
     border: solid 1px rgb(235, 231, 231);
-    width: calc(100vh - 40px)
+    width: calc(100vw - 40px);
+    padding: 10px;
 }
   
 .wrapper:hover {
@@ -129,10 +132,10 @@ box-shadow: inset -1px -1px 23px 24px rgba(237, 237, 159, 0.23); */
     display: flex;
     flex-direction: column;
     background-color:#fcf8f8;
-    margin: 10px;
     border: solid 1px rgb(235, 231, 231);
-    width: calc(100vh - 40px);
+    width: calc(100vw - 40px);
     text-align: center;
+    padding: 10px;
 }
   
 .product-section {
@@ -185,10 +188,12 @@ box-shadow: inset -1px -1px 23px 24px rgba(237, 237, 159, 0.23); */
   
 #erase-button{
     padding: 5px;
-    grid-column:2;
+    grid-column: 2;
     background-color: rgb(195, 198, 196);
     text-align: center;
     width: max-content;
+    margin-top: 10px; 
+    justify-self: end 
 }
 
 #erase-button:hover{
@@ -254,6 +259,26 @@ footer div {
     color: rgb(63, 185, 63);
 }
 
+#hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  
+#hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: grey;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+  
+
+  
+
   @media only screen and (max-width: 768px) {
     .add-product {
         justify-content: center;
@@ -271,8 +296,63 @@ footer div {
     footer, 
     .price-wrapper,
     a {
-        font-size: 0.9em;
+        font-size: 0.95em;
     } 
 
-  }
+
+    .product-wrapper,
+    .add-product {
+        width: 100vw;
+    }
+
+
+    .product-content {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    }
+
+    .product-price {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    }
+
+    .product-location {
+    text-align: center;
+    font-size: 0.9em;
+    }
+  
+    .product-description {
+    text-align: justify;
+    font-size: 0.9em;
+    }  
+
+    #erase-button{
+       align-self: flex-end;
+    }
+
+    #nav {
+        position: relative;
+      }
+    
+    #nav a {
+        display: block;
+        opacity: 0;
+        margin-bottom: 10px;
+    }
+    
+    #hamburger {
+        display: block;
+    }
+}
+    
+
   
