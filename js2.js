@@ -53,3 +53,24 @@ const deleteProduct = (data) => {
 };
 deleteProduct()
 });
+
+
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('#nav');
+const navElements = document.getElementsByClassName('nav');
+
+function mouseBurger() {
+    for (let i = 0; i < navElements.length; i++){
+      navElements[i].style.opacity = "1";
+      hamburger.style.opacity = "0.3"
+    }
+
+    setTimeout(function() {
+      for (let i = 0; i < navElements.length; i++){
+        navElements[i].style.opacity = "0";
+        hamburger.style.opacity = "1"
+      }
+    }, 3000)
+}
+
+hamburger.addEventListener('mouseover', mouseBurger);

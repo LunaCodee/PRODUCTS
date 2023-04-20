@@ -349,17 +349,25 @@ footer div {
     }
 
     #nav {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        
       }
     
-    #nav a {
+    #nav a{
         display: block;
         opacity: 0;
-        margin-bottom: 10px;
+        font-size: 10px;
+        margin-right: 2px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 2px;
+        border:0;
     }
     
     #hamburger {
         display: block;
+        opacity: 1;
     }
 }
     

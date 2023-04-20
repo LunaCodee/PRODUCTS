@@ -57,11 +57,22 @@ fetch("https://643d689d6afd66da6af6326f.mockapi.io/product")
   });
 
 
-  // const hamburger = document.getElementById('hamburger');
-  // const menu = document.getElementsByClassName('nav');
-  
-  // hamburger.addEventListener('click', function() {
-  //   hamburger.span.style.backgroundColor = red;
-  //   menu.style.opacity = 1;
-  // });
-  
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('#nav');
+const navElements = document.getElementsByClassName('nav');
+
+function mouseBurger() {
+    for (let i = 0; i < navElements.length; i++){
+      navElements[i].style.opacity = "1";
+      hamburger.style.opacity = "0.3"
+    }
+
+    setTimeout(function() {
+      for (let i = 0; i < navElements.length; i++){
+        navElements[i].style.opacity = "0";
+        hamburger.style.opacity = "1"
+      }
+    }, 3000)
+}
+
+hamburger.addEventListener('mouseover', mouseBurger);
